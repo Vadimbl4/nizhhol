@@ -1,0 +1,107 @@
+.disappear {
+  animation: fade 1s reverse ease-in-out;
+}
+
+.appear {
+  animation: fade 1s ease-in-out; 
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes starShine {
+  0% {
+    fill: black;
+  }
+  50% {
+    fill: rgb(212, 151, 21);
+  }
+}
+
+@keyframes starShine {
+  0% {
+    fill: black;
+  }
+  50% {
+    fill: rgb(212, 151, 21);
+  }
+}
+
+
+// @keyframes leftSlide {
+//   from {
+//     padding-left: 0;
+//   }
+//   to {
+//     padding-left: 30px;
+//   }
+// }
+
+// @keyframes rightSlide {
+//   from {
+//     right: -100px;
+//   }
+//   to {
+//     right: -50px;
+//   }
+// }
+
+// @keyframes bottomSlide {
+//   from {
+//     bottom: 0 + 60px;
+//   }
+//   to {
+//     bottom: 50 + 60px;
+//   }
+// }
+
+// @keyframes arrow {
+//   0%{
+//       opacity: 0;
+//       transform: translate(0,-20px) rotate(45deg);
+//   }
+//   50%{
+//       opacity: 1;
+//   }
+//   100%{
+//       opacity: 0;
+//       transform: translate(0,20px) rotate(45deg);
+//   }
+// }

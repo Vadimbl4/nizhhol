@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import './animations';
+@import './vars';
+
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  outline: 0;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: $mainFont;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+//components styles
+@import '../components/Accordion/accordion.scss';
+@import '../components/Swiper/swiper.scss';
+@import '../components/Card/card.scss';
+
+//main page
+@import './Home-page/01_navbar.scss';
+@import './Home-page/02_main.scss';
+@import './Home-page/03_servises.scss';
+@import './Home-page/04_faq.scss';
+@import './Home-page/05_footer.scss';

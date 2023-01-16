@@ -1,0 +1,45 @@
+.accordion {
+  margin: 2% auto;
+  max-width: 70vw;
+  border: 5px solid black;
+  border-radius: 10px;
+
+  .accordion-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    @media (max-width: $breakpoin480) { 
+     text-align: center;
+    }
+    @media (max-width: $breakpoin480) { 
+      text-align: center;
+      font-size: 20px;
+     }
+    cursor: pointer;
+    padding: 20px;
+    background-color: $secondaryColor;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(7px);
+    &:hover{
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  .accordion-content {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(7px);
+    padding: 20px;
+    @media (max-width: $breakpoin480) { 
+      text-align: center;
+      font-size: 20px;
+     }
+  }
+
+}

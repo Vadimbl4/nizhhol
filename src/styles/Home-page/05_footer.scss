@@ -1,0 +1,76 @@
+.footer-wrap {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: $mainFont;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px;
+  z-index: 9;
+
+  .foot-line {
+    //display: none;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0px;
+    z-index: -1;
+    -webkit-transform: rotateX(180deg) rotateY(180deg);
+    transform: rotateX(180deg) rotateY(180deg);
+
+    @media (max-width: $breakpoin1024) {
+      bottom: -10px;
+    }
+    @media (max-width: $breakpoin768) { 
+     height: 70px;
+    }
+  }
+
+  .contacts-inner {
+    color: black;
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 100px;
+    line-height: 27px;
+    @media (max-width: $breakpoin1024) {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      line-height: 27px;
+      font-size: $mainFont - 5px;
+    }
+    @media (max-width: $breakpoin768) {
+      text-align: center;
+      gap: 15px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    @media (max-width: $breakpoin480) { 
+     
+    }
+  }
+}

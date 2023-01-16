@@ -1,0 +1,28 @@
+.faq-wrap {
+  //height: 100vh;
+  position: relative;
+  padding: 30px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($secondaryColor),
+    to(#fff)
+  );
+  background: -o-linear-gradient($secondaryColor, #fff);
+  background: linear-gradient($secondaryColor, #fff);
+  background-size: cover;
+  background-position-x: 0px;
+  z-index: 6;
+
+  .faq-title {
+    text-align: center;
+    font-size: $mainFont + 20px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    margin-bottom: 70px;
+    @media (max-width: $breakpoin480) {
+      font-size: $mainFont;
+    }
+  }
+}

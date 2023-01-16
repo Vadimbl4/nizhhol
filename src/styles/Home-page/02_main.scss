@@ -1,0 +1,93 @@
+.main-wrap {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($mainColor),
+    to(white)
+  );
+  background: -o-linear-gradient($mainColor, white);
+  background: linear-gradient($mainColor, white);
+
+  .map{
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    @media (max-width: $breakpoin1440) {
+      bottom: -5%;
+    }
+  }
+  .hands, .delivery,.garant{
+    height: 40%;
+    width: 40%;
+    right: 0;
+    @media (max-width: $breakpoin1024) {
+      height: 30%;
+      width: 30%;
+      right: 7%;
+    }
+    @media (max-width: $breakpoin480) { 
+     bottom: 5%;
+     right: 50%;
+     -webkit-transform: translate(50%);
+         -ms-transform: translate(50%);
+             transform: translate(50%);
+    }
+  }
+
+  .garant{
+    @media (max-width: 915px) { 
+      bottom: 5%;
+      right: 50%;
+      -webkit-transform: translate(50%);
+          -ms-transform: translate(50%);
+              transform: translate(50%);
+     }
+  }
+
+  .delivery{
+    height: 50%;
+    @media (max-width: $breakpoin1024) {
+      height: 40%;
+    }
+  }
+  .lines{
+    position: absolute;
+    height: 120%;
+    bottom: -10%;
+    right: -40%;
+    z-index: -1;
+    @media (max-width:$breakpoin768){
+      bottom: -20%;
+    }
+    @media (max-width:$breakpoin480){
+      height: 1000px;
+    bottom: -60%;
+     right: -35%;
+    }
+  }
+  .items{
+    position: absolute;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+    left: 0;
+    height: 50%;
+    @media (max-width: $breakpoin360) { 
+     height: 40%;
+    }
+  }
+}

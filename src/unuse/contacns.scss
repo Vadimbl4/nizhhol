@@ -1,0 +1,17 @@
+.contactsWrap {
+  position: relative;
+  height: 100vh;
+  padding: 30px;
+  background: linear-gradient($secondaryColor, #fff);
+  background-size: cover;
+  background-position-x: 0px;
+  z-index: 6;
+
+  .contactsTitle {
+    font-family: 'Metro';
+    text-align: center;
+    font-size: $mainFont + 20px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    margin-bottom: 70px;
+  }}
