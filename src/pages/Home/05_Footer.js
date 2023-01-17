@@ -16,18 +16,18 @@ export default function Footer() {
           </div>
           <div className="address">
             <div>Адрес:</div>
-            <div>603163, Нижегородская область,</div>
+            {/* <div>603163, Нижегородская область,</div>
             <div>г. Нижний Новгород,</div>
-            <div>Какая-то улица, д. какой-то, кв. какая-то</div>
+            <div>Какая-то улица, д. какой-то, кв. какая-то</div> */}
           </div>
           <div className="communic">
             <div className="tel">
               <div>Телефон:</div>
-              <div>+7 (999) 999-99-99</div>
+              <div>283-15-44</div>
             </div>
             <div className="email">
               <div>E-mail:</div>
-              <div>example@.mail.ru</div>
+              {/* <div>example@.mail.ru</div> */}
             </div>
           </div>
         </div>
